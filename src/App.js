@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import DisplayPost from './Components/DisplayPost/DisplayPost';
 import CreatePost from './Components/CreatePost/CreatePost';
+import NavBar from './Components/NavBar/NavBar';
 
 function App() {
 
@@ -14,8 +15,9 @@ function addNewPost(newPost){       // newPost is the form data coming from Crea
 
   return (
     <div>
+      <NavBar />   
       <DisplayPost parentPost={post} />   {/* passing in the post data as props to access it in the component */}
-      <CreatePost addNewPost={addNewPost} />     {/* passing in the addNewPost function so we can pull the data up to this level */}
+      <CreatePost addNewPost={addNewPost} />  {/* passing in the addNewPost function so we can pull the data up to this level */}
     </div>
   );
 }
