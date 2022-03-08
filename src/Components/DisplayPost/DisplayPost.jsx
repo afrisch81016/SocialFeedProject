@@ -2,7 +2,7 @@ const DisplayPost = (props) => {
     
     return (
         <table>
-            <h1>Feed</h1>
+            <h1>SocialFeed</h1>
             <tbody>
                 {props.parentPost.map((post, index) =>{
                     return (
