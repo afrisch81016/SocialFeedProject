@@ -1,6 +1,9 @@
-.active{
+.green{
     background-color: #85c524;
 }
-.inactive{
+.red{
     background-color: rgb(223, 61, 61);
+}
+.grey{
+    background-color: gray;
 }

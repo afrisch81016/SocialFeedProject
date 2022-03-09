@@ -3,23 +3,35 @@ import './LikeButton.css'
 
 const LikeButton = (props) =>{
 
-    const [likeButtonClass, setLikeButtonClass] =useState("inactive");
-    const [dislikeButtonClass, setDislikeButtonClass] = useState('active'); //rename 'active' to colors used for like and dislike
+    const [likeButtonClass, setLikeButtonClass] =useState("grey");  // using hooks to sotre state of the button colors
+    const [dislikeButtonClass, setDislikeButtonClass] = useState('grey'); 
 
-
-    function handleClick(event){
-        event.preventDefault();
-        if(likeButtonClass === "inactive"){
-            setLikeButtonClass("active");
+    function handleClickLike(event){
+        event.preventDefault(); //prevents refreshing of the page. data stays on until webpage is refreshed
+        if(likeButtonClass === "grey"){
+            setLikeButtonClass("green");  //when clicking on "like" button, this sets the color to green
+            setDislikeButtonClass("grey");  //this allows the "dislike" button to remain "defaulted" gray
+        
         }
         else {
-            setLikeButtonClass("inactive");
+            setLikeButtonClass("grey");//if button is already green, switches it back to gray
+        }
+    }
+
+    function handleClickDislike(event){
+        event.preventDefault();
+        if(dislikeButtonClass === "grey"){
+            setLikeButtonClass('grey');
+            setDislikeButtonClass('red');
+        }
+        else{
+            setDislikeButtonClass('grey');
         }
     }
     return(
         <div>
-            <button className={likeButtonClass} onClick={handleClick}>like</button>
-            <button>dislike</button>
+            <button className={likeButtonClass} onClick={handleClickLike}>like</button>
+            <button className={dislikeButtonClass} onClick={handleClickDislike}>dislike</button>
         </div>
     )
 }

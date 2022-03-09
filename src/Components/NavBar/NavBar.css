@@ -1,15 +1,16 @@
-h1{
+.navbar{
     color:black;
     text-align: center;
-      min-height: 100vh;
+      min-height: 2vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 .socialspan{
-    color:black
+    font-size: 40px;
+    color:black;
 }
 .feedspan{
-    color:gray
+    font-size: 40px;
+    color:gray;
+    
 }
