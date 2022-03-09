@@ -29,7 +29,7 @@ const LikeButton = (props) =>{
         }
     }
     return(
-        <div>
+        <div className="buttonspan">
             <button className={likeButtonClass} onClick={handleClickLike}>like</button>
             <button className={dislikeButtonClass} onClick={handleClickDislike}>dislike</button>
         </div>

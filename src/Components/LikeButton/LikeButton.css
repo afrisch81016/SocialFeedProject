@@ -1,9 +1,16 @@
 .green{
     background-color: #85c524;
+    
 }
 .red{
     background-color: rgb(223, 61, 61);
+    
 }
 .grey{
     background-color: gray;
+   
+}
+.buttonspan{
+  position: relative;
+    margin-top: 10px;
 }

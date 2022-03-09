@@ -17,7 +17,7 @@ function handleSubmit(event){
 }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className='content' onSubmit={handleSubmit}>
             <label>Name</label>
              <input type='text' onChange ={(event) => setName(event.target.value)} value= {name}/>  {/* data being sent to hook on line 5 */}
             <label>Post</label>

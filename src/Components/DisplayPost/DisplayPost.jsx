@@ -10,11 +10,15 @@ const DisplayPost = (props) => {
             <tbody>
                 {props.parentPost.map((post, index) =>{
                     return (
-                        <tr key = {index}>
+                        <reactFragment>
+                        <tr className='tablerow' key = {index}>
                           <td>{post.name}</td>
-                          <td>{post.post}</td>  
+                        </tr>
+                        <tr>
+                        <td>{post.post}</td>  
                           <LikeButton />
                         </tr>
+                        </reactFragment>
                     )
                 })}
             </tbody>
