@@ -3,11 +3,11 @@ import './App.css';
 import DisplayPost from './Components/DisplayPost/DisplayPost';
 import CreatePost from './Components/CreatePost/CreatePost';
 import NavBar from './Components/NavBar/NavBar';
-import LikeButton from './Components/LikeButton/LikeButton';
+
 
 function App() {
 
- const [post, setPost] = useState([{name:"", post:""}])
+ const [post, setPost] = useState([{name:"Adam Frisch", post:"This is a test post"}])
 
 function addNewPost(newPost){       // newPost is the form data coming from CreatePost
   let tempPost = [...post, newPost]  // ...post is grabbing all of the existing data and NewPost is just adding that to it 
@@ -19,7 +19,6 @@ function addNewPost(newPost){       // newPost is the form data coming from Crea
       <NavBar />   
       <DisplayPost parentPost={post} />   {/* passing in the post data as props to access it in the component */}
       <CreatePost addNewPost={addNewPost} />  {/* passing in the addNewPost function so we can pull the data up to this level */}
-      <LikeButton />
     </div>
   );
 }

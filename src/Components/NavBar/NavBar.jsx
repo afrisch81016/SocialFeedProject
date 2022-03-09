@@ -3,9 +3,9 @@ import "./NavBar.css"
 const NavBar = (props) => {
 
     return (
-        <table>
+        <div>
             <span className='socialspan'>Social</span><span className='feedspan'>Feed</span>
-        </table>
+        </div>
 
     );
 }
