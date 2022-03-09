@@ -1,6 +1,9 @@
+import './DisplayPost.css'
+
 const DisplayPost = (props) => {
     
     return (
+    <form>
         <table>
             <tbody>
                 {props.parentPost.map((post, index) =>{
@@ -13,6 +16,7 @@ const DisplayPost = (props) => {
                 })}
             </tbody>
         </table>
+    </form>
     );
 }
 

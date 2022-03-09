@@ -20,7 +20,7 @@ input[type=text], select {
   }
   
   input[type=submit]:hover {
-    background-color: teal;
+    background-color: #38883a;
   }
   
   div {
