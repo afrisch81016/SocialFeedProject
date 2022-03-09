@@ -6,16 +6,17 @@
     padding-right: 10%;
 }
 table{ 
-    border-collapse: collapse;
+    padding-top: 25px;
+    padding-bottom: 45px;
     width: 60%;
 }
 td{
 padding: 10px;
-text-align: left;
+text-align: center;
 border: 1px solid black;
 }
-tr:hover {background-color: coral;}
+tr:hover {background-color: rgb(218, 215, 82);}
 .tablerow{
     border-color: black;
-    border: 2px;
+    border: 4px;
 }
