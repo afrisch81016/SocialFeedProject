@@ -1,4 +1,6 @@
 .navbar{
+    background-image: url(https://raddevon.com/wp-content/uploads/2018/10/react.jpg);
+    background-position: -60%;
     color:black;
     text-align: center;
       min-height: 2vh;
@@ -7,10 +9,10 @@
 }
 .socialspan{
     font-size: 40px;
-    color:black;
+    color:rgb(105, 105, 105);
 }
 .feedspan{
     font-size: 40px;
-    color:gray;
+    color:rgb(216, 216, 216);
     
 }

@@ -5,9 +5,9 @@ import LikeButton from '../LikeButton/LikeButton';
 const DisplayPost = (props) => {
     
     return (
-    <form>
+    <form className='postwindow'>
         <table>
-            <tbody className='div'>
+            <tbody>
                 {props.parentPost.map((post, index) =>{
                     return (
                         <tr key = {index}>
