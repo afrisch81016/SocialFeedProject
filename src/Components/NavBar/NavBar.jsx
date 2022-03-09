@@ -2,9 +2,8 @@ const NavBar = (props) => {
 
     return (
         <table>
-            <h1>SocialFeed</h1>
+            <span className='socialspan'>Social</span><span className='feedspan'>Feed</span>
         </table>
-
 
     );
 }

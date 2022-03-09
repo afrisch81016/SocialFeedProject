@@ -1,4 +1,15 @@
 h1{
     color:black;
     text-align: center;
+      min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.socialspan{
+    color:black
+}
+.feedspan{
+    color:gray
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './CreatePost.css'  // need to import css file into jsx for styling to take affect
 
 const CreatePost = (props) => {
 
@@ -21,8 +22,11 @@ function handleSubmit(event){
              <input type='text' onChange ={(event) => setName(event.target.value)} value= {name}/>  {/* data being sent to hook on line 5 */}
             <label>Post</label>
             <input type='text' onChange={(event) => setPost(event.target.value)} value= {post}/>    {/* data being sent to hook on line 6 */}
-            <button type='submit'> Add Post</button>
+            <input type="submit" value="Add Post"></input>
         </form>
+        
+
+      
     );
 }
 
